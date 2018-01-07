@@ -1,0 +1,21 @@
+<meta>
+    <info name="Courier" author="rootcause" type="script" />
+
+    <!-- Files -->
+    <script src="Courier.dll" type="server" lang="compiled" />
+    <script src="Courier.js" type="client" lang="javascript" />
+    <script src="ProductDetector.js" type="client" lang="javascript" />
+
+    <!-- Settings -->
+    <settings>
+        <setting name="saveInterval" value="120" default="120" description="Seconds that need to pass between two save operations. (will always save on script exit)" />
+        <setting name="worldPropLife" value="10" default="10" description="Minutes a dropped product/box has before getting removed." />
+        <setting name="factoryProductInterval" value="180" default="180" description="Seconds that need to pass before an empty factory makes 1 product." />
+        <setting name="factoryMaxAutoStock" value="10" default="10" description="Amount of stock a factory needs to stop auto-generating product." />
+        <setting name="buyerSaleInterval" value="180" default="180" description="Seconds that need to pass before a full buyer sells 1 product." />
+        <setting name="buyerMinStockPercentage" value="50" default="50" description="Percentage of stock a buyer needs to stop auto-selling product." />
+    </settings>
+
+    <!-- Required -->
+    <include resource="MoneyAPI" />
+</meta>
